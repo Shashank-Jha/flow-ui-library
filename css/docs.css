@@ -1,0 +1,59 @@
+@import url("./typography.css");
+@import url("./colors.css");
+@import url("./navbar.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.super-categories {
+  color: aliceblue;
+  margin-left: 8rem;
+}
+
+.sub-categories {
+  list-style-type: none;
+  padding-left: 0px;
+  color: #64748b;
+}
+
+.category {
+  cursor: pointer;
+  border: 0px;
+  border-style: solid;
+  border-left-width: 0.2px;
+  margin-left: 0.5px;
+  padding: 15px;
+}
+
+.category:hover {
+  color: #cbd5e1;
+}
+
+.category.active {
+  border: 0px;
+  border-style: solid;
+  border-left-width: 3px;
+  margin-left: 0px;
+  color: var(--secondary-color);
+}
+
+.doc-content {
+  width: 90%;
+  display: flex;
+}
+.component-desc {
+  width: 75%;
+  text-align: justify;
+  margin-left:10rem;
+}
+
+.super-heading{
+  color: var(--secondary-color);
+}
+.category-heading{
+  color:var(--text-color);
+}

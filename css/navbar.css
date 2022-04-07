@@ -1,0 +1,40 @@
+@import url('./typography.css');
+@import url('./colors.css');
+
+
+.nav-btn-wrapper{
+    display: flex;
+    padding-right:5rem;
+}
+
+.main-nav {
+    width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:1rem 0rem;
+  z-index: 1;
+  border-style:solid;
+  border-top:0;
+  border-left:0;
+  border-right: 0;
+  border-width: 0.25px;
+  border-color: #334155;
+}
+
+.logo{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.logo-text{
+    margin-right:auto;
+    padding-left: 8rem;
+}
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin:1rem;
+}

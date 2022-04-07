@@ -1,0 +1,71 @@
+@import url("./typography.css");
+@import url("./landing-nav.css");
+:root {
+  font-family: "Inter", sans-serif;
+  --primary-color: #0f172a;
+  --secondary-color: #38bdf8;
+  --text-color: aliceblue;
+  --text-color-2: #94a3b8;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  display: inline-block;
+  width: 50vw;
+}
+.main-content-heading {
+  color: aliceblue;
+  font-size: 72px;
+  font-weight: 900;
+}
+.main-content-heading > span {
+  /* background-color: #00DBDE; */
+  background: -webkit-linear-gradient(125deg, #00dbde 0%, #fc00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-hero {
+  display: inline-block;
+}
+
+.main-content-intro {
+  color: var(--text-color-2);
+  font-size: larger;
+}
+
+.main-content-intro > span {
+  color: var(--secondary-color);
+}
+
+.main-btn{
+    margin-bottom: 2rem;
+}
+
+.btn-getStarted{
+    font-family: "Inter", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    height: 48px;
+    width: 20%;
+    border-radius: 100px;
+}
+
+footer{
+    color:var(--text-color-2);
+}

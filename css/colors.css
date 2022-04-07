@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #0f172a;
+  --primary-color-2:#334155;
+  --secondary-color: #38bdf8;
+  --text-color: aliceblue;
+  --text-color-2: #94a3b8;
+  --btn-color:#1E293B;
+}
+
+/* Color Pallete : SLATE */
+.color-slate-100{background-color: #f1f5f9;}
+.color-slate-200{background-color: #cbd5e1;}
+.color-slate-300{background-color: #94a3b8;}
+.color-slate-400{background-color: #64748b;}
+.color-slate-500{background-color: #475569;}
+.color-slate-600{background-color: #334155;}
+.color-slate-700{background-color: #1e293b;}
+.color-slate-800{background-color: #0f172a;}
+
+/* Color Pallete : RED */
+.color-red-100{background-color: #fee2e2;}
+.color-red-200{background-color: #fecaca;}
+.color-red-300{background-color: #fca5a5;}
+.color-red-400{background-color: #f87171;}
+.color-red-500{background-color: #ef4444;}
+.color-red-600{background-color: #dc2626;}
+.color-red-700{background-color: #b91c1c;}
+.color-red-800{background-color: #7f1d1d;}
+
+/* Color Pallete : SLATE */
+.color-slate-100{background-color: #f1f5f9;}
+.color-slate-200{background-color: #cbd5e1;}
+.color-slate-300{background-color: #94a3b8;}
+.color-slate-400{background-color: #64748b;}
+.color-slate-500{background-color: #475569;}
+.color-slate-600{background-color: #334155;}
+.color-slate-700{background-color: #1e293b;}
+.color-slate-800{background-color: #0f172a;}
+
+/* Color Pallete : SLATE */
+.color-slate-100{background-color: #f1f5f9;}
+.color-slate-200{background-color: #cbd5e1;}
+.color-slate-300{background-color: #94a3b8;}
+.color-slate-400{background-color: #64748b;}
+.color-slate-500{background-color: #475569;}
+.color-slate-600{background-color: #334155;}
+.color-slate-700{background-color: #1e293b;}
+.color-slate-800{background-color: #0f172a;}
+
+.color-pallete{
+  display: flex;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 46vw;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+  border-color: var(--primary-color-2);
+}
+
+.color-name{
+  padding-left: 5rem;
+}
+
+.color-tag{  
+  color:var(--text-color);
+  padding:0; 
+  padding-left:0.8rem;
+
+}
+.color-box{
+  height: 22px;
+  width: 38px;
+  border-radius: 12%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border:solid;
+  border-width: 1px;
+  border-color: var(--primary-color-2);
+}

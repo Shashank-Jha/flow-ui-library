@@ -1,0 +1,29 @@
+@import url("./typography.css");
+@import url("./colors.css");
+.main-nav {
+    width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left:2rem;
+  padding-right: 2rem;
+  z-index: 1;
+}
+
+.logo{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+.logo-text{
+    margin-right:auto;
+}
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin:1rem;
+}
+
