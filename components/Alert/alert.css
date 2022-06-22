@@ -1,0 +1,28 @@
+@import url(/css/docs.css);
+
+.alert{
+    padding:1rem;
+    margin:1rem;
+    border-radius: 0.5rem;
+}
+
+    .alert-primary {
+        background-color: var(--light-blue);
+        color: var(--secondary-color);
+      }
+      .alert-success {
+        background-color: var(--light-green);
+        color: var(--green);
+      }
+      .alert-danger {
+        background-color: var(--light-red);
+        color: var(--red);
+      }
+      .alert-warning {
+        background-color: var(--light-orange);
+        color: var(--orange);
+      }
+      .alert-dark {
+        background-color: var(--dark);
+        color: var(--secondary);
+      }
