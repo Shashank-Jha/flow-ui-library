@@ -88,9 +88,4 @@ body {
 .code-snippet{
   margin:2rem 0;
   width: 80%;
-  
-  border: solid;
-  border-radius: 1rem;
-  border-width: 1px;
-  border-color: #132F4C;
 }
