@@ -14,15 +14,21 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
 }
 
 .sidebar{
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 80%; /* Full-height: remove this if you want "auto" height */
   width: 20%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 5rem; /* Stay at the top */
   left: 0;
+  overflow-y: scroll;
 }
 
 .sidebar-link{
@@ -109,3 +115,46 @@ body {
     background-color: var(--primary-color-2);
 }
 
+.back-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  width: 90%;
+}
+
+.back-btn-container .left a {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding:0.5rem 0;
+  padding-right:0.5rem;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.back-btn-container .left a:hover {
+  background-color: var(--hover-btn-color);
+  padding:0.5rem 0;
+  padding-right:0.5rem;
+  border: solid;
+  border-width:0;
+  border-radius: 0.5rem;
+}
+
+.back-btn-container .right a {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding:0.5rem;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.back-btn-container .right a:hover {
+  background-color: var(--hover-btn-color);
+  padding:0.5rem;
+  border: solid;
+  border-width:0;
+  border-radius: 0.5rem;
+}
