@@ -1,6 +1,9 @@
 @import url("./typography.css");
 @import url("./colors.css");
 @import url("./navbar.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 
 :root{
   --example-bg : #1E293B;
@@ -11,6 +14,15 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   padding: 0;
+}
+
+.sidebar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 5rem; /* Stay at the top */
+  left: 0;
 }
 
 .sidebar-link{
@@ -62,7 +74,7 @@ body {
 .component-desc {
   width: 75%;
   text-align: justify;
-  margin-left:10rem;
+  margin-left:30rem;
 }
 
 .super-heading{
@@ -82,10 +94,18 @@ body {
   border: solid;
   border-radius: 1rem;
   border-width: 1px;
-  border-color: var(--text-color-2);
+  border-color: var(--primary-color-2);
 }
 
 .code-snippet{
   margin:2rem 0;
   width: 80%;
 }
+
+.divider{
+    margin: 2rem 0;
+    height: 1px;
+    width: 90%;
+    background-color: var(--primary-color-2);
+}
+
