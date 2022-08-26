@@ -31,3 +31,7 @@
 .hover-link:hover{
     color: var(--secondary-color);
 }
+
+.text-highlight{
+    color: var(--secondary-color);
+}
