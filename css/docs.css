@@ -99,7 +99,7 @@ a{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 80%;
   padding: 1rem;
   border: solid;
@@ -113,14 +113,14 @@ a{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 80%;
   padding: 1rem;
   border: solid;
   border-radius: 1rem;
   border-width: 1px;
   border-color: var(--primary-color-2);
-  background-color: #86bdff;
+  background-color: var(--light-blue);
 }
 
 .code-snippet{
