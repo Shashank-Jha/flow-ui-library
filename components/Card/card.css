@@ -1,5 +1,6 @@
 @import url(/css/docs.css);
 @import url(/components/Button/button.css);
+@import url(/components/Image/image.css);
 
 .card {
   display: flex;
