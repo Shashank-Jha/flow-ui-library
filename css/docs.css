@@ -1,6 +1,7 @@
 @import url("./typography.css");
 @import url("./colors.css");
 @import url("./navbar.css");
+@import url("/components/Utilities/utilities.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
