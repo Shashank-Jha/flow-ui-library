@@ -1,0 +1,253 @@
+@import url(/css/docs.css);
+@import url(/components/Button/button.css);
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: max-content;
+  padding: 0.1rem;
+  border-radius: 1rem;
+  background: var(--white);
+  border: 1px solid var(--light-grey);
+
+}
+
+.card-title{
+    margin :0.5rem 0rem;
+}
+
+.card-subtitle{
+    margin :0.5rem 0rem;
+}
+
+.card-text{
+    margin :0.5rem 0rem;
+}
+
+.text-only-card {
+  padding: 1rem;
+  color:var(--primary-color);
+}
+
+.text-only-card .card-title {
+  font-size: 1.25rem;
+  color:var(--secondary-color);
+}
+
+.text-only-card .card-subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-color-2);
+  padding-top: 4px;
+}
+
+.text-only-card .card-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+.ecommerce-card {
+  position: relative;
+}
+
+.card-with-badge {
+  position: relative;
+}
+
+.ecommerce-card .card-header {
+  position: relative;
+  height: 270px;
+}
+
+.ecommerce-card .card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius:1rem ;
+  border-top-right-radius:1rem;
+}
+
+.card-with-badge .card-badge {
+  position: absolute;
+  top: 15px;
+  left: -1px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--green);
+  color: white;
+}
+
+.card-floating-icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.card-floating-icon span {
+  color: var(--grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-floating-icon span:hover {
+  color: var(--red);
+}
+
+.card-price {
+  padding: 0.5rem 0;
+}
+
+.card-price .price-after-discount {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.card-price .price-before-discount {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.card-price .discount {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--red);
+  padding-left: 5px;
+}
+
+.ecommerce-card .card-body {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 90%;
+}
+
+.ecommerce-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.ecommerce-card .card-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-color-2);
+}
+
+.card-with-text-overlay {
+  position: relative;
+  opacity: 0.3;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-with-dismiss .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-with-dismiss .close-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.close-icon span {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-icon span:hover {
+  color: var(--secondary-color);
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-horizontal .card-header {
+  width: 100%;
+  height: 270px;
+}
+
+.card-horizontal .card-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card-horizontal .card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.card-horizontal .card-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--primary-color-2);
+}
+
+.card-horizontal .card-header .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card-horizontal .card-body button {
+  margin-top: 10px;
+}
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 30px -10px;
+  border: none;
+}
+
+/* screen above 600px - tablet, desktop */
+@media only screen and (min-width: 600px) {
+  .card-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+  }
+  .card-horizontal .card-header {
+    width: 40%;
+    height: auto;
+  }
+
+  .card-horizontal .card-body {
+    width: 60%;
+  }
+
+  .card-horizontal .card-header .card-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+  }
+}
