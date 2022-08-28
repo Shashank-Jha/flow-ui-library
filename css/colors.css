@@ -13,12 +13,13 @@
   --black: #282828;
   --white: #ffffff;
   --light-blue: #b4d9fb;
-  --dark-red: #62020a;
-  --dark-green: #012e03;
+  --dark-red: #8D021F;
+  --dark-green:  #005C46;
   --dark-orange: #754701;
-  --blue: #38bdf8;
-  --red: #ef4444;
-  --green: #0ca814;
+  --dark-blue:rgb(30 64 175);
+  --blue: rgb(37 99 235);
+  --red: #D21F3C;
+  --green: #50c878;
   --orange: #f97316;
   --rating-orange: #ffb400;
   --toast-default-color: rgb(51, 51, 51);
