@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css">
+    <title>Input | Flow UI</title>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- Documentation => " Navbar " -->
+        <nav class="main-nav">
+            <a class="no-underline logo-text" href="/index.html">Flow UI</a>
+            <div class="nav-btn-wrapper">
+                <a class="no-underline nav-btn font-semibold btn-doc hover-link" href="index.html">Docs</a>
+                <a class="no-underline nav-btn font-semibold" href="https://github.com/Shashank-Jha/flow-ui-library">Github</a>
+            </div>
+        </nav>
+
+        <div class="doc-content">
+            <!-- Documentation => "Aside Section" -->
+            <aside class="sidebar">
+                <div class="super-categories">
+                    <h4>Getting Started</h4>
+                    <ul class="sub-categories">
+                        <li class="category"><a class="sidebar-link" href="">Introduction</a></li>
+                        <li class="category"><a class="sidebar-link" href="">Colors</a></li>
+                        <li class="category"><a class="sidebar-link" href="">Typography</a></li>
+                    </ul>
+                </div>
+                <div class="super-categories">
+                    <h4>Components</h4>
+                    <ul class="sub-categories">
+                        <li class="category"><a class="sidebar-link" href="/components/Alert/alert.html">Alert</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Avatar/avatar.html">Avatar</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Badge/badge.html">Badge</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Button/button.html">Button</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Card/card.html">Card</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Image/image.html">Grid</a></li>
+                        <li class="category"><a class="sidebar-link" href="/components/Input/input.html">Image</a></li>
+                        <li class="category active"><a class="sidebar-link" href="">Input</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="component-desc">
+                <h4 class="super-heading">Flow Components</h4>
+                <h1 class="category-heading ">Inputs</h1>
+                <p class="content-description">Inputs are used for user interaction such as taking data from user & then
+					provide the results back to user accordingly.
+				</p>
+                <div class="divider"></div>
+
+                <h2 class="content-category">Standard Inputs</h2>
+				<p class="content-category-description"> Standard inputs have a label, input field and type for
+					different use cases.
+				</p>
+				<div class="example-container">
+					<div class="input-group">
+						<label class="input-label">Username</label>
+						<input type="text" class="input-field" required>
+					</div>
+					<div class="input-group">
+						<label class="input-label">Password</label>
+						<input type="password" class="input-field" required>
+					</div>
+				</div>
+				<div class="code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2819%2C47%2C76%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=743.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-field%2522%2520required%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522input-field%2522%2520required%253E%250A%253C%252Fdiv%253E"
+                    style="width: 770px; height: 360px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+				</div>
+				<h2 class="content-category">Input with Error Style</h2>
+				<p class="content-category-description">This input comes with error style and error message. Add <span
+						class="content-highlight">input-show-error</span> class and a error message to
+					apply the error style
+				</p>
+				<div class="example-container">
+					<div class="input-group input-show-error">
+						<label class="input-label">Password</label>
+						<input type="password" class="input-field" required>
+						<div class="error-message">Wrong Password. Try again.</div>
+					</div>
+				</div>
+				<div class="code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2819%2C47%2C76%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=743.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2520input-show-error%2522%253E%250A%2509%253Clabel%2520class%253D%2522input-label%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2509%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522input-field%2522%2520required%253E%250A%2520%2520%2509%253Cdiv%2520class%253D%2522error-message%2522%253EWrong%2520Password.%2520Try%2520again.%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+                    style="width: 770px; height: 297px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+				</div>
+				<h2 class="content-category">Textarea</h2>
+				<p class="content-category-description">Textarea is used to take long form of content data from the user
+					such as message, address, reviews etc.
+				</p>
+				<div class="example-container">
+					<div class="input-group">
+						<label class="input-label">Message</label>
+						<textarea class="text-area" rows="5" placeholder="write something..."></textarea>
+					</div>
+				</div>
+				<div class="code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2819%2C47%2C76%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=720.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522input-label%2522%253EMessage%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Ctextarea%2520class%253D%2522text-area%2522%2520rows%253D%25225%2522%2520placeholder%253D%2522write%2520something...%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+                    style="width: 720px; height: 275px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+				</div>
+				<h2 class="content-category">Radio Button</h2>
+				<p class="content-category-description">Radio button is used to select one option from a set of options.
+				</p>
+				<div class="example-container">
+					<div class="radio-group">
+						<label class="radio-label" for="radio1">
+							<input class="radio-btn" id="radio1" type="radio" name="radio">
+							Option
+						</label>
+					</div>
+					<div class="radio-group">
+						<label class="radio-label" for="radio2">
+							<input class="radio-btn" id="radio2" type="radio" name="radio" checked>
+							Default Checked
+						</label>
+					</div>
+					<div class="radio-group radio-disabled">
+						<label class="radio-label" for="radio3">
+							<input class="radio-btn" id="radio3" type="radio" name="radio" disabled>
+							Disabled
+						</label>
+					</div>
+				</div>
+				<div class="code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2819%2C47%2C76%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=758.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522radio-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522radio-label%2522%2520for%253D%2522radio1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-btn%2522%2520id%253D%2522radio1%2522%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Option%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522radio-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522radio-label%2522%2520for%253D%2522radio2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-btn%2522%2520id%253D%2522radio2%2522%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Default%2520Checked%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522radio-group%2520radio-disabled%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522radio-label%2522%2520for%253D%2522radio3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-btn%2522%2520id%253D%2522radio3%2522%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                    style="width: 759px; height: 658px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+				</div>
+				<h2 class="content-category">Checkbox</h2>
+				<p class="content-category-description">Checkbox is used to select one or multiple options from a set of
+					options.
+				</p>
+				<div class="example-container">
+					<div class="checkbox-group">
+						<label class="checkbox-label" for="checkbox1">
+							<input class="checkbox" id="checkbox1" type="checkbox" name="checkbox">
+							Option
+						</label>
+					</div>
+					<div class="checkbox-group">
+						<label class="checkbox-label" for="checkbox2">
+							<input class="radio-btn" id="checkbox2" type="checkbox" name="checkbox" checked>
+							Default Checked
+						</label>
+					</div>
+					<div class="checkbox-group checkbox-disabled">
+						<label class="checkbox-label" for="checkbox3">
+							<input class="checkbox" id="checkbox3" type="checkbox" name="checkbox" disabled>
+							Disabled
+						</label>
+					</div>
+				</div>
+				<div class="code-snippet">
+                    <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2819%2C47%2C76%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=758.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522checkbox-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522checkbox-label%2522%2520for%253D%2522checkbox1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522checkbox%2522%2520id%253D%2522checkbox1%2522%2520type%253D%2522checkbox%2522%2520name%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Option%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522checkbox-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522checkbox-label%2522%2520for%253D%2522checkbox2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-btn%2522%2520id%253D%2522checkbox2%2522%2520type%253D%2522checkbox%2522%2520name%253D%2522checkbox%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Default%2520Checked%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522checkbox-group%2520checkbox-disabled%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522checkbox-label%2522%2520for%253D%2522checkbox3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522checkbox%2522%2520id%253D%2522checkbox3%2522%2520type%253D%2522checkbox%2522%2520name%253D%2522checkbox%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                    style="width: 759px; height: 658px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+				</div>
+
+                <div class="divider"></div>
+
+                <!-- Left & Right Navigation Button  -->
+                <div class="back-btn-container">
+					<div class="left">
+						<a href="/components/Image/image.html">
+							<span class="material-icons">chevron_left</span>
+							Image
+						</a>
+					</div>
+					<!-- <div class="right">
+						<a href="/components/Input/input.html">
+							
+							<span class="material-icons">chevron_right</span>
+						</a>
+					</div> -->
+				</div>
+
+            </main>
+        </div>
+
+    </div>
+	<script src="../../javascript/sidebar.js"></script>
+</body>
+
+</html>
